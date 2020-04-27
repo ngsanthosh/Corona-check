@@ -1,5 +1,6 @@
 #Program Created by N.G. SANTHOSH SUDHAAN
 #send your feedback to santhoshsudhaan@yahoo.com
+
 def yep():
     print("\nPlease let me know your current temperature in degree Fahrenheit:")
     temp=int(input("\n1.Normal(96F-98.6F)\n2.Fever(98.6F-102F)\n3.High Fever(>102F)\n4.Don't know\n"))
@@ -21,10 +22,20 @@ def trav():
         yep();
         
 def symp():
+    global ris,symptoms,g;
+    ris=0;
     print("\nAre you experiencing any of the symptoms below?")
-    g=int(input("\n1.Dry cough\n2.Sore throat\n3.Weakness\n4.Change in Appetite\n5.Difficulty in Breathing\n6.Drowsiness\n7.none of these\n"))
-    if(g==7 or g==1 or g==2 or g==3 or g==4 or g==5 or g==6):
-          trav();        
+    symptoms=["Dry cough","Sore throat","Weakness","Change in Appetite","Difficulty in Breathing","Drowsiness","none of these"]
+    for i in range(len(symptoms)):
+        print(i+1,".",symptoms[i])
+        
+    g=int(input("\n"))
+    if (g==1 or g==2 or g==3 or g==4 or g==5 or g==6):
+           ris=ris+1;
+           trav();
+          
+    elif(g==7):
+          trav();
     else:
         print("\nWrong Entry!, Sorry start from the beginning!")
         yep();
@@ -35,7 +46,10 @@ def hist():
     if(his==1 or his==2 or his==3 or his==4):
         final();
     elif(his==5):
-        good();
+        if(ris==0):
+            good();
+        else:
+            print("Good.. But still it is suggested to have a physical test at nearby Hospital! As you have the",symptoms[g-1],"Symptom")
     else:
         print("\nWrong Entry!, Sorry start from the beginning!")
         yep();
@@ -64,9 +78,9 @@ if(age>12):
     else:
         print("\nWrong Entry!, Sorry start from the beginning!")
 else:
-    print("\nSorry! This Assess test suits only for the agers above 12.")
+    print("\nSorry! This Assess test suits only for the agers above 12.");
     
-print("\nThanks for your time, {}..\n\nProgrammed by Santhosh ~ VCET IT 1st year.".format(name))
-print("Stay Home! Stay Safe!")
+print("\nThanks for your time, {}..\n\nProgrammed by Santhosh ~ VCET IT 1st year.".format(name));
+print("\nSTAY HOME! STAY SAFE!")
 
 
