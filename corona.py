@@ -64,8 +64,9 @@ if(age>12):
     else:
         print("\nWrong Entry!, Sorry start from the beginning!")
 else:
-    print("\nSorry! This Assess test suits only for the agers above 12.");
+    print("\nSorry! This Assess test suits only for the agers above 12.")
     
-print("\nThanks for your time, {}..\n\nProgrammed by Santhosh ~ VCET IT 1st year.".format(name));
+print("\nThanks for your time, {}..\n\nProgrammed by Santhosh ~ VCET IT 1st year.".format(name))
+print("Stay Home! Stay Safe!")
 
 
