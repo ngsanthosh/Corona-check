@@ -67,8 +67,9 @@ def hist():
     
     
 def good():
-
+    
     print("\nThat's good., You are all fine!")
+    
 def final():
 
     print("Seems Risky.., It is recommmended to have a physical test at nearby hospital!")
@@ -82,6 +83,7 @@ print(intr2.center(75,"~"))
 
 a=input("\nPlease enter your name: ")
 name=a.capitalize()
+
 print("\nHello, {}.. here I have created a assessment scan., Do answer the questions honestly!".format(name))
 print("So, lets get started!")
 print("\nNOTE: For Multi choice questions, Reply your answers with respective numbers (i.e., 1,2..etc.)")
