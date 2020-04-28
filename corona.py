@@ -1,6 +1,7 @@
 #Program Created by N.G. SANTHOSH SUDHAAN
 #send your feedback to santhoshsudhaan@yahoo.com
 
+#A kind of main funtion, through which other functions are called and executed sequencially
 def yep():
 
     print("\nPlease let me know your current temperature in degree Fahrenheit:")
@@ -11,7 +12,8 @@ def yep():
     else:
         print("\nWrong Entry!, Sorry start from the beginning!")
         yep();
-
+        
+#function to fetch the travel history
 def trav():
 
     print("\nNow please select your travel and exposure details:")
@@ -25,6 +27,7 @@ def trav():
         print("\nWrong Entry!, Sorry start from the beginning!")
         yep();
         
+#Function to fetch symptom from the user!       
 def symp():
 
     global ris,symptoms,g;
@@ -45,7 +48,8 @@ def symp():
     else:
         print("\nWrong Entry!, Sorry start from the beginning!")
         yep();
-          
+        
+#function to know about the history of the disease condition        
 def hist():
     print("\nDo you have any of these conditions?")
     his=int(input("\n1.diabetes\n2.High Blood Pressure\n3.Heart disease\n4.Lung diseases\n5.None of these\n"));
@@ -100,6 +104,6 @@ else:
     print("\nSorry! This Assess test suits only for the agers above 12.");
     
 print("\nThanks for your time, {}..\n\nProgrammed by Santhosh ~ VCET IT 1st year.".format(name));
-print("\nSTAY HOME! STAY SAFE!")
+print("\nSTAY HOME! STAY SAFE!\n")
 
 
